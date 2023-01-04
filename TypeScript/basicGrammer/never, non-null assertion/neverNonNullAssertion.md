@@ -1,6 +1,6 @@
 # TypeScript never type, |, ! operator
 
-# 1. 빈 배열의 타입
+### 1. 빈 배열의 타입
 빈 배열의 타입은 never 이다.<br>
 (빈 배열의 타입이 never 가 되기 위해서는, **tsconfig.json** 파일에 **strict: true, noImplicitAny: false** 로 설정해야 한다.)
 <br>
@@ -19,7 +19,7 @@ for(let i = 0; i < 5; i++)
 
 <br>
 
-# 2. | 연산자
+### 2. | 연산자
 2개 이상의 타입을 선언하고 싶다면, **| 연산자**를 사용한다.
 ```ts
 // 변수 a 에 타입이 number 또는 string 인 값을 할당할 수 있다.
@@ -30,7 +30,7 @@ a = "Hello";
 
 <br>
 
-# 3. Non-null assertion
+### 3. Non-null assertion
 **Non-null 단언 연산자 !** 는 해당 변수의 값이 null, undefined 가 아니라고 단언한다.
 
 ```ts
