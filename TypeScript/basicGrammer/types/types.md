@@ -28,6 +28,13 @@ function add(x: number, y: number): number
 }
 console.log(add(10, 20));
 
+// 타입과 함수 정의 부분을 분리할 수 있음.
+function minus(x: number, y: number): number;
+function minus(x: any, y: any)
+{
+    return (x - y);
+}
+
 // 화살표 함수이름: 타입 = (매개변수) => {}
 // 타입의 구조는?
 // (매개변수: 타입) => 리턴값 타입
