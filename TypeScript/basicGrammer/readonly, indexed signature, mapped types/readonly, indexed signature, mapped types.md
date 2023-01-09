@@ -48,7 +48,7 @@ const a1: A = {a: "a"};
 <br>
 
 ### 3. Mapped Types
-**Mapped Types 는 이전 타입을 기반으로 새로운 타입을 생성하는 데 사용한다.**
+**Mapped Types 는 기존에 정의되어 있는 타입을 새로운 타입으로 변환하는 데 사용한다.**
 ```ts
 type B = "Human" | "Dog" | "Cat";
 

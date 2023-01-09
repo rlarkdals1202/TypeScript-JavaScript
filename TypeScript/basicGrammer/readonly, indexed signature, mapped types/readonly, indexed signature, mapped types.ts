@@ -32,7 +32,7 @@ const a: A = {a: 1, b: 2, c: 3, d: 4};
 
 
 // Mapped Types
-// 이전 타입을 기반으로 새로운 타입을 생성하는 데 사용한다.
+// 기존에 정의되어 있는 타입을 새로운 타입으로 변환하는 데 사용한다.
 type B = "Human" | "Dog" | "Cat";
 
 // 타입이 Human, Dog, Cat 으로 선언된 Property Key 를 무조건 하나씩만 가져야 한다.
