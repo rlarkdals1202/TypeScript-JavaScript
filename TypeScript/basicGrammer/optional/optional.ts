@@ -50,6 +50,7 @@ const object4: O4 = {a: "a", b: "b"};
 console.log(object4);
 
 // 참고)
+//
 // Optional Chaining (옵셔널 체이닝)
 // 객체를 가리키는(참조하는) 참조변수의 값이 null, undefined 인지 확인하고, Property 를
 // 참조하고 싶을 때 유용하다. (연산자는 ?.)
