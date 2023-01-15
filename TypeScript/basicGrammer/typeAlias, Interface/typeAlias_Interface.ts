@@ -32,6 +32,7 @@ console.log(animal, pet);
 
 // 인터페이스 중복 선언 가능하다.
 // (중복 선언할 경우, 인터페이스가 서로 합쳐진다.)
+// -> 선언적 확장
 
 interface Person
 {

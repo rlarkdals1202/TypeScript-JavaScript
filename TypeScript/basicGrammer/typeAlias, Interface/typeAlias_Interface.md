@@ -1,9 +1,14 @@
 # TypeScript Type Alias, Interface
 
+Type Alias, Interface 를 통해, **새로운 타입을 정의할 수 있다.**
+<br>
+Type Alias 와 Interface 의 차이점: **Type Alias 는 선언적 확장이 불가능하지만, Interface 는 선언적 확장이 가능하다.**
+<br>
+(**선언적 확장: 이미 선언된 타입 선언에 멤버(Property, Method)를 추가하는 것**)
+
 ### 1. Type Alias
 **Type Alias** : 타입의 새로운 이름을 만드는 방법이다.<br>
-(타입에 다른 이름을 붙인다.)<br>
-Type Alias 는 **새로운 타입을 생성하지는 않는다.**
+(타입에 다른 이름을 붙인다.)
 ```ts
 // Type Alias
 type Human = {name: string, age: number};
@@ -23,8 +28,7 @@ console.log(doctor);
 ### 2. Interface
 Interface 는 일반적으로 **타입 체크를 위해 사용**된다. **인터페이스는 
 여러가지 타입을 갖는 프로퍼티, 메소드로 이루어진 새로운 타입을 정의하는 것**과 유사하다.
-<br>
-(Interface 는 Type Alias 와 달리, **새로운 타입을 생성한다.**)
+
 ```ts
 interface Animal
 {
@@ -46,7 +50,7 @@ interface Pet extends Animal
 const myPet: Pet = {name: "b", age: 10, sort: "말티즈", owner: "kim"};
 console.log(myPet);
 
-// 인터페이스는 동일한 이름을 가지고 중복 선언을 할 수 있다.
+// 인터페이스는 동일한 이름을 가지고 중복 선언을 할 수 있다. -> 선언적 확장
 // (중복 선언할 경우, 인터페이스가 서로 합쳐진다.)
 
 interface Person
