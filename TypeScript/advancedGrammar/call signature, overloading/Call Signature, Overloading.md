@@ -87,6 +87,7 @@ console.log(add(10, 20));
 #### (4). Interface 에서의 Call Signature
 **interface 함수 타입 이름 { (매개변수: 타입): 리턴값 타입 }**
 ```ts
+// Interface 를 사용해서 함수의 파라미터와 리턴값의 타입을 모두 미리 선언할 수 있다.
 interface Add
 {
     (x: number, y: number): number,
@@ -115,6 +116,7 @@ function add(x: any, y: any): any
 }
 
 console.log(add(10, 20));
+console.log(add("a", "b"));
 ```
 
 <br>

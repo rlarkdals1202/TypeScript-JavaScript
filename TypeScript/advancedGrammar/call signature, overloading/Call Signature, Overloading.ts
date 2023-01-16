@@ -64,6 +64,7 @@ printNumberArray([1, 2, 3], [4, 5, 6]);
 // (타입 스크립트에서는 같은 이름의 함수를 중복하여 선언하고,
 //  함수를 구현할 때는 any 타입을 사용한다.)
 //
+// 오버로드 된 함수는 단 한 번만 구현할 수 있다.
 // 이때는, 함수 구현할 때 any 타입을 써도 상관없다.
 function add(x: number, y: number): number;
 function add(x: string, y: string): string;
