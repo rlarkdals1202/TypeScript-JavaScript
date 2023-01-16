@@ -80,7 +80,8 @@ console.log(add("a", "b"));
 // 클래스, 인터페이스 내부에서의 함수 오버로딩
 
 // (매개변수: 타입): 리턴값 타입 형식으로 함수 타입을 미리 선언(call signature)하는 것은
-// 함수 오버로딩을 지원한다.
+// 함수 오버로딩을 지원, 허용한다.
+
 interface Add
 {
     (x: number, y: number): number,

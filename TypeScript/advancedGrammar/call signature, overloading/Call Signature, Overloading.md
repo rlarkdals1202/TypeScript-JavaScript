@@ -43,7 +43,7 @@ printNum(10, 20);
 <br>
 
 ### 2. Call Signature
-#### Call Signature )
+#### Call Signature 
 : **함수의 파라미터와 리턴값의 타입을 미리 선언**하는 것
 
 #### (1). 함수 표현식에서의 Call Signature
