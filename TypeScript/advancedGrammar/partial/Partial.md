@@ -6,7 +6,7 @@ TypeScript 는 **일반적인 타입 변환을 쉽게 하기 위해서 몇 가�
 
 ### 1. Partial Type
 #### Partial Type 의 기능
-: **Type Parameter 에 전달되는 타입의 모든 Property** 를 **Optional Property 로 만들어준다.**
+: **Type Parameter 에 전달되는 타입의 모든 Property** 를 **Optional Property 로 만든 새로운 타입(Partial< T >)을 정의한다.**
 <br>
 (**Optional Property : 구현해도 되고, 구현하지 않아도 되는 Property.** [Optional Property 에 대해서](https://github.com/rlarkdals1202/TypeScript-JavaScript/blob/main/TypeScript/basicGrammer/optional/optional.md))
 ```ts
@@ -29,7 +29,7 @@ const human: Human =
 // Partial<Human> 타입의 객체는 인터페이스 내부의
 // 모든 Property 들을 구현해야 할 필요는 없다.
 // (왜냐하면, Partial 타입이 Human 타입의 모든 Property 들을
-//  Optional Property 로 만들기 때문이다.)
+//  Optional Property 로 만든 새로운 타입(Partial<Human>)을 정의하기 때문이다.)
 const human1: Partial<Human> =
     {
         name: "lee",
@@ -89,4 +89,4 @@ type P< T > = [key in keyof T]?: T[key] 코드를 해석해보면
 * T[key]<br>: **타입 파라미터 T에 전달되는 타입의 각 Property 의 타입**
 * ?:<br>: **옵셔널 프로퍼티로 선언**
 
-결국에는 **타입 파라미터 T 에 전달되는 타입의 모든 Property 를 Optional Property 로 바꾸겠다는 의미**이다.
+결국에는 **타입 파라미터 T 에 전달되는 타입의 모든 Property 를 Optional Property 로 만든 새로운 타입(Partial< T >)을 정의 하겠다는 의미**이다.
