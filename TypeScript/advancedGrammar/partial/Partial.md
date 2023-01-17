@@ -84,7 +84,7 @@ const human1: P<Human> =
 
 <br>
 
-type P< T > = [key in keyof T]?: T[key] 코드를 해석해보면
+type P< T > = {[key in keyof T]?: T[key]} 코드를 해석해보면
 * [key in keyof T]<br>: **타입 파라미터 T 에 전달되는 타입의 각 Property Key**
 * T[key]<br>: **타입 파라미터 T에 전달되는 타입의 각 Property 의 타입**
 * ?:<br>: **옵셔널 프로퍼티로 선언**
