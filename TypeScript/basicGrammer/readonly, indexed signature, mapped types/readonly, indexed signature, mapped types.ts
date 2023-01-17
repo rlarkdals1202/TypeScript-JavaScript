@@ -25,7 +25,7 @@ console.log(ex);
 // (모든 Property 의 타입을 한 번에 선언할 수 있다.
 //  Property Key, Property Value 의 타입을 한 번에 선언할 수 있다.)
 
-// Property Key 의 타입은 string, Property Value 의 속성은 number
+// Property Key 의 타입은 string, Property Value 의 타입은 number
 type A = {[key: string]: number};
 
 const a: A = {a: 1, b: 2, c: 3, d: 4};

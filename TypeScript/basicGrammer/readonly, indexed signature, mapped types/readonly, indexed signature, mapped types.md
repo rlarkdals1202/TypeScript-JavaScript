@@ -34,7 +34,7 @@ Indexed Signature 를 통해, **모든 Property 의 타입을 한 번에 선언�
 <br>
 형태 >> **{[key: T]: U}**
 ```ts
-// Property Key 의 타입은 string, Property Value 의 속성은 number
+// Property Key 의 타입은 string, Property Value 의 타입은 number
 type A = {[key: string]: number};
 
 const a: A = {a: 1, b: 2, c: 3};
