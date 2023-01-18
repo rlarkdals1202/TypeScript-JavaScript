@@ -29,7 +29,7 @@ const human: Human =
 // Pick<Human, "name" | "age"> 타입의 객체는 name, age Property 만
 // 구현하면 된다.
 // (왜냐하면 Pick 타입이 Human 타입에서 명시된, name, age Property 만 선택하여,
-//  새로운 타입(Pick<Human, "name" | "age"> 타입을 정의하기 때문이다.)
+//  새로운 타입(Pick<Human, "name" | "age">)을 정의하기 때문이다.
 const human1: Pick<Human, "name" | "age"> =
     {
         name: "lee",
