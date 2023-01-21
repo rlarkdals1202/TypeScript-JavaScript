@@ -80,5 +80,5 @@ class Animal
 type A = InstanceType<typeof Animal>;
 
 const dog: Animal = new Animal("puppy", 10);
-const cat: A = new Animal("kitty", 8);
+const cat: A = new Animal("kitty", 10);
 ```
