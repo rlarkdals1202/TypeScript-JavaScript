@@ -65,7 +65,7 @@ const human: Human =
     };
 
 // 값 수정 가능
-human.name = "lee";
+human.name = "park";
 
 const human1: Readonly<Human> =
     {

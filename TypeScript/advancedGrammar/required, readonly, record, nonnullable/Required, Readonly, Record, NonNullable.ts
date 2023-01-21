@@ -47,7 +47,7 @@ const human2: Human =
     married: false,
 }
 
-human2.age = 29;
+human2.age = 30;
 
 const human3: Readonly<Human> =
     {
